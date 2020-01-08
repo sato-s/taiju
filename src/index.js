@@ -16,13 +16,24 @@ var draw = function(){
       //   'BMI': 'y2',
       // },
     },
+    grid: {
+      y: {
+        lines: [
+          {value: 62.1, text: 'BMI:22'},
+          {value: 70.6, text: 'BMI:25'},
+         ]
+      },
+    },
     axis: {
       x: {
           type: 'timeseries',
           tick: {
               format: '%Y-%m-%d'
-          }
+          },
       },
+      y: {
+          min: 61
+      }
       // y2: {
       //   show: true
       // }
