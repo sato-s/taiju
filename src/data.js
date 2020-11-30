@@ -18,4 +18,11 @@ var data = [
   { time: '2020-01-06', weight: 67.2 },
   { time: '2020-01-07', weight: 67.4 },
   { time: '2020-01-08', weight: 66.8 },
+  { time: '2020-01-10', weight: 66.4 },
+  { time: '2020-01-18', weight: 66.4 },
+  { time: '2020-01-22', weight: 66.0 },
+  { time: '2020-01-25', weight: 65.7 },
+  { time: '2020-02-08', weight: 66.6 },
+  { time: '2020-02-09', weight: 66.0 },
+  { time: '2020-03-10', weight: 64.2 },
 ]
