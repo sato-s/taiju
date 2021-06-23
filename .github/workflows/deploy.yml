@@ -3,11 +3,11 @@ name: My workflow
 on: push
 
 jobs:
-  my-job:
-    name: My job
+  deploy:
+    name: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to foo-bar.surge.sh
+      - name: Deploy to amazing-cord.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'amazing-cord.surge.sh'
