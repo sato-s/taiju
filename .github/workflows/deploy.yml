@@ -3,14 +3,14 @@ name: My workflow
 on: push
 
 jobs:
-  deploy:
-    name: deploy
+  build:
     runs-on: ubuntu-latest
+    name: Deploying to surge
     steps:
-      - name: Deploy to amazing-cord.surge.sh
-        uses: dswistowski/surge-sh-action@v1
+      - uses: actions/checkout@v1
+      - name: Install surge and fire deployment
+        uses: actions/setup-node@v1
         with:
-          domain: 'amazing-cord.surge.sh'
-          project: '.'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
+          node-version: 14
+      - run: npm install -g surge
+      - run: surge ./ amazing-cord.surge.sh --token ${{ secrets.SURGE_TOKEN }}
