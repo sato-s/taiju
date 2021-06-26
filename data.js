@@ -34,4 +34,5 @@ var data = [
   { time: '2021-06-23', weight: 71.8 },
   { time: '2021-06-24', weight: 71.0 },
   { time: '2021-06-25', weight: 71.2 },
+  { time: '2021-06-26', weight: 70.6 },
 ]
